@@ -33,6 +33,7 @@ Cramer Online</a>
   <div class="vertical-center">
       <div class="container-fluid h-100" style="color:white">
 <?php
+date_default_timezone_set('America/Sao_Paulo');
   $a1 = $_POST["a"];
 	$a2 = $_POST["d"];
 	$a3 = $_POST["g"];

@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<script src="js/main.js"></script>
 <link rel= "stylesheet" type="text/css" href="css/2grau.css"/>
 <link rel="stylesheet" type="text/css" href="http://overpass-30e2.kxcdn.com/overpass.css" />
 <link rel="stylesheet" type="text/css" href="http://overpass-30e2.kxcdn.com/overpass-mono.css" />
@@ -45,7 +44,9 @@ Cramer Online</a>
 
     <br>
 <center>
+      <form action="valida.php" method="post">
   <div class="row h-100 justify-content-center align-items-center ">
+
     <div class="form-group col-lg-3">
     <input type="number" class="form-control" name="a" id="a"  value="" placeholder="Insira o valor de a">
   </div>
@@ -58,6 +59,7 @@ Cramer Online</a>
 </div>
     <div class="row h-100 justify-content-center align-items-center">
   <button class="btn btn-danger btn-lg btn-xl text-uppercase" onclick="exec()">Calcular</button>
+</form>
 </div>
 </div>
   <br><br>
