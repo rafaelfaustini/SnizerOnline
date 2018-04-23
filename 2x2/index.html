@@ -31,10 +31,11 @@ Cramer Online</a>
 
 </nav>
 <header class="masthead" style="margin-top:10px;">
+  <form method="post" action="valida.php">
   <div class="vertical-center">
   <div class="container-fluid h-100" style="color:white">
 
-<form method="post" action="valida.php">
+
 <div class="row h-100 justify-content-center align-items-center">
     <h4 class="text-center" style="font-weight:300"> Resolução de sistemas lineares (3x3)</h2>
 </div>
@@ -42,63 +43,40 @@ Cramer Online</a>
     <h4 class="text-center" style="font-weight:200">Essa calculadora permite a resolução de sistemas lineares (3x3).</h4>
 </div>
 <div class="row h-100 justify-content-center align-items-center">
-    <h3 class="text-center" style="font-family: overpass-mono;font-weight:100;margin-top:10px;">ax + by + cz = j</h4><br>
+    <h3 class="text-center" style="font-family: overpass-mono;font-weight:100;margin-top:10px;">ax + by = e</h4><br>
 </div>
 <div class="row h-100 justify-content-center align-items-center">
-    <h3 class="text-center" style="font-family: overpass-mono;font-weight:100;margin-top:10px;">dx + ey + fz = k</h4><br>
+    <h3 class="text-center" style="font-family: overpass-mono;font-weight:100;margin-top:10px;">cx + dy = f</h4><br>
 </div>
-<div class="row h-100 justify-content-center align-items-center">
-    <h3 class="text-center" style="font-family: overpass-mono;font-weight:100;margin-top:10px;">gx + hy + iz = l</h4>
-</div>
+
 
     <br>
 <center>
   <div class="row h-100 justify-content-center align-items-center ">
-    <div class="form-group col-lg-2">
+    <div class="form-group col-lg-4">
     <input type="number" class="form-control" name="a" id="a"  value="" placeholder="Insira o valor de a" required>
   </div>
-  <div class="form-group col-lg-2">
+  <div class="form-group col-lg-4">
     <input type="number" class="form-control" name="b" id="b" value="" placeholder="Insira o valor de b" required>
 </div>
-    <div class="form-group col-lg-2">
-<input type="number" class="form-control" name="c" id="c" value="" placeholder="Insira o valor de c" required>
+    <div class="form-group col-lg-4">
+<input type="number" class="form-control" name="e" id="e" value="" placeholder="Insira o valor de e" required>
   </div>
-  <div class="form-group col-lg-2">
-<input type="number" class="form-control" name="j" id="j" value="" placeholder="Insira o valor de j" required>
-</div>
 
 </div> <br>
 
 <div class="row h-100 justify-content-center align-items-center ">
-  <div class="form-group col-lg-2">
-  <input type="number" class="form-control" name="d" id="d"  value="" placeholder="Insira o valor de d" required>
+  <div class="form-group col-lg-4">
+  <input type="number" class="form-control" name="c" id="c"  value="" placeholder="Insira o valor de c" required>
 </div>
-<div class="form-group col-lg-2">
-  <input type="number" class="form-control" name="e" id="e" value="" placeholder="Insira o valor de e" required>
+<div class="form-group col-lg-4">
+  <input type="number" class="form-control" name="d" id="d" value="" placeholder="Insira o valor de d" required>
 </div>
-  <div class="form-group col-lg-2">
+  <div class="form-group col-lg-4">
 <input type="number" class="form-control" name="f" id="f" value="" placeholder="Insira o valor de f" required>
 </div>
-<div class="form-group col-lg-2">
-<input type="number" class="form-control" name="k" id="k" value="" placeholder="Insira o valor de k" required>
-</div>
 </div> <br>
 
-<div class="row h-100 justify-content-center align-items-center ">
-  <div class="form-group col-lg-2">
-  <input type="number" class="form-control" name="g" id="g"  value="" placeholder="Insira o valor de g" required>
-</div>
-<div class="form-group col-lg-2">
-  <input type="number" class="form-control" name="h" id="h" value="" placeholder="Insira o valor de h" required>
-</div>
-  <div class="form-group col-lg-2">
-<input type="number" class="form-control" name="i" id="i" value="" placeholder="Insira o valor de i" required>
-</div>
-<div class="form-group col-lg-2">
-<input type="number" class="form-control" name="l" id="l" value="" placeholder="Insira o valor de l" required>
-</div>
-</div>
-</form>
     <div class="row h-100 justify-content-center align-items-center">
   <button type="submit"class="btn btn-danger btn-lg btn-xl text-uppercase">Calcular</button>
   </form>
@@ -119,9 +97,9 @@ Cramer Online</a>
 <center>
 <div class="card bg-dark text-light">
   <div class="card-header"><button id="ex" class="link text-white"><b>Exemplo de sistema para entrada</b></button></div>
-  <div class="card-body">x+2y+z = 12<br>x-3y+5z = 1<br>2x-y+3z = 10</div>
+  <div class="card-body">2x+y=40<br>2x-2y=10</div>
   <div class="card-footer">
-Essa aplicação está em testes, problemas são recorrentes<br>
+Essa aplicação está em testes, problemas são recorrentes
 Caso encontre problemas ou tenha alguma sugestão contate (contato@rafaelfaustini.com.br)
   </div>
 </center>
@@ -129,18 +107,12 @@ Caso encontre problemas ou tenha alguma sugestão contate (contato@rafaelfaustin
 <script>
 var button = document.getElementById("ex");
 button.onclick = function(){
-document.getElementById("a").value = "1";
-document.getElementById("b").value = "2";
-document.getElementById("c").value = "1";
-document.getElementById("d").value = "1";
-document.getElementById("e").value = "-3";
-document.getElementById("f").value = "5";
-document.getElementById("g").value = "2";
-document.getElementById("h").value = "-1";
-document.getElementById("i").value = "3";
-document.getElementById("j").value = "12";
-document.getElementById("k").value = "1";
-document.getElementById("l").value = "10";
+document.getElementById("a").value = "2";
+document.getElementById("b").value = "1";
+document.getElementById("c").value = "2";
+document.getElementById("d").value = "-2";
+document.getElementById("e").value = "40";
+document.getElementById("f").value = "10";
 }
 </script>
 

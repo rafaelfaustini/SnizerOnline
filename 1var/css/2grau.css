@@ -1,0 +1,21 @@
+.box {
+  width:250px;
+  padding-top:5px;
+  border-style:solid;
+  border-color:#fff;
+  border-width:1px;
+  padding-left:3px;
+  padding-bottom:10px;
+text-align: center;
+vertical-align: middle;
+line-height: 20px;
+}
+button.link {
+  background:none;border:none;
+ }
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one ??       */
+  display: flex;
+  align-items: center;
+}
