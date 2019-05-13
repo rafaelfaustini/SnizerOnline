@@ -19,6 +19,6 @@ You can test Snizer Cramer Online at this url: http://rafaelfaustini.com.br/cram
 
 Feel free to contribute to the project in order to make the step by step logs better and add more calculable categories.
 
-## License (GPL 3.0)
+## License
 
-You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) GPL-licensed code must also be made available under the GPL along with build & install instructions.
+This project is licensed under the GPL V3 License - see the [LICENSE.md](LICENSE.md) file for details.
